@@ -1,0 +1,136 @@
+:root {
+  --gold: #d4af37;           /* Or classique */
+  --gold-hover: #f1c40f;
+  --dark-bg: #121212;        /* Noir profond */
+  --card-bg: #1e1e1e;        /* Gris anthracite */
+  --text-light: #ffffff;
+  --text-muted: #a0a0a0;
+  --border-gold: rgba(212, 175, 55, 0.3);
+  
+  font-family: 'Playfair Display', 'Georgia', serif; /* Style élégant */
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+body {
+  margin: 0;
+  display: block;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Titres avec un look Vintage */
+h1, h2 {
+  text-align: center;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 2px solid var(--gold);
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+/* Formulaires de connexion */
+input {
+  padding: 15px;
+  margin: 10px 0;
+  background: #2a2a2a;
+  border: 1px solid var(--border-gold);
+  border-radius: 0; /* Look carré plus masculin */
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+}
+
+/* Bouton Premium */
+button {
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: var(--gold);
+  color: #000;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--gold-hover);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+  transform: scale(1.02);
+}
+
+/* Grille de services */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Cartes Services façon menu de luxe */
+.service-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border: 1px solid var(--border-gold);
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.service-card:hover {
+  border-color: var(--gold);
+}
+
+.service-card h3 {
+  color: var(--gold);
+  margin-top: 0;
+}
+
+.service-card .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: white;
+}
+
+/* Tableau des RDV version sombre */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-gold);
+}
+
+th {
+  background: #2a2a2a;
+  color: var(--gold);
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+tr:hover {
+  background: #252525;
+}
